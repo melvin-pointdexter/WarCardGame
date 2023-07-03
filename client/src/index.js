@@ -20,8 +20,8 @@ function App() {
 
   const [userName, setUserName] = React.useState('')
 
-  return (<Text>test</Text>
-    /*<ColorContext.Provider value = {{didRedirect: didRedirect, playerDidRedirect: playerDidRedirect, playerDidNotRedirect: playerDidNotRedirect}}>
+  return (
+    <ColorContext.Provider value = {{didRedirect: didRedirect, playerDidRedirect: playerDidRedirect, playerDidNotRedirect: playerDidNotRedirect}}>
       <Router>
         <Switch>
           <Route path = "/" exact>
@@ -39,7 +39,7 @@ function App() {
           <Redirect to = "/" />
         </Switch>
       </Router>
-    </ColorContext.Provider>*/);
+    </ColorContext.Provider>);
 }
 
 export default App;
